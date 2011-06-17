@@ -1,0 +1,30 @@
+Web status monitor.
+===================================
+This script is to report via twitter when the http status code of a webpage is diferent of 200.
+
+The main script is monitoring/report_status.sh
+
+
+Instructions:
+
+1. Modify monitoring/report_status.sh acording to you needs. The main data to change is the
+   web page and the users that will be notified
+2. Run ttytter/1.1.11.txt or the current version. Please sure that it work, send 
+   messages to twitter, mentions and dm, remember to send dm both user must be followers.
+3. When ttytter is working just call monitoring/report_status.sh
+4. You can put this in a cron with: crontab -e 
+
+Dependecies:
+
+curl
+gawk
+ttytter -- in the repository
+
+In debian and ubuntu just install with this:
+sudo apt-get install curl
+sudo apt-get gawk
+
+----------------------
+git commit -m "$(lynx -dump -nolist http://whatthecommit.com/|sed -n 1p)"
+
+
