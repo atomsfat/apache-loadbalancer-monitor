@@ -13,7 +13,7 @@ Instruciones:
    mensajes, menciones y mensajes directos, recuerda para poder mandar mensajes directos los 
    usuarios deben de ser followers.
 3. Cuando ttytter estes completamente seguro que ttytter esta funcionando correctamente. Ya puedes usar monitoring/report_status.sh.
-4. Puedes poner en el script en un cron con: crontab -e. 
+4. Puedes automatizar el proceso si lo pones en un cron, en debian y ubuntu ejecuta esta comando: crontab -e. 
 
 Dependecias:
 
