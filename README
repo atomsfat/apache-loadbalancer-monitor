@@ -1,6 +1,6 @@
 Web status monitor.
 ===================================
-This script is to report via twitter when the http status code of a webpage is diferent of 200.
+This script is to report via twitter when the http status code of a webpage is different of 200.
 
 The main script is monitoring/report_status.sh
 
