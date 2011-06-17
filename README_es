@@ -13,7 +13,8 @@ Instruciones:
    ttytter/1.1.11.txt o la version mas actual, sigue las instrucciones en pantalla para que se autentifique con twitter. 
    Una vez que se ha autentificado asegurate que puedes enviar mensajes y mensajes directos, recuerda para 
    poder mandar mensajes directos los usuarios deben de ser followers.
-3. Cuando estes completamente seguro que ttytter esta funcionando correctamente. Ya puedes empezar a usar monitoring/report_status.sh.
+3. Cuando estes completamente seguro que ttytter esta funcionando correctamente. 
+   Ya puedes empezar a usar monitoring/report_status.sh.
 4. Puedes automatizar el proceso si lo pones en un cron, en debian y ubuntu ejecuta esta comando: crontab -e. 
 
 Dependecias:
