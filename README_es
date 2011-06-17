@@ -1,0 +1,33 @@
+Web status monitor.
+===================================
+El proposito de este script es checar el codigo de status de una pagina web.
+
+El script principal es monitoring/report_status.sh
+
+Instruciones:
+
+1. Modifica monitoring/report_status.sh de acuerdo a tus necesiades. Los principales cambios son
+   la pagina que se va a monitorear, los usuarios que van a ser notificados, y el status code 
+   que vas a estar verificando por default es 200.  
+2. Ejecuta ttytter/1.1.11.txt o la version actual. Asegurate que funciona correctamente, manda 
+   mensajes, menciones y mensajes directos, recuerda para poder mandar mensajes directos los 
+   usuarios deben de ser followers.
+3. Cuando ttytter estes completamente seguro que ttytter esta funcionando correctamente. Ya puedes usar monitoring/report_status.sh.
+4. Puedes poner en el script en un cron con: crontab -e. 
+
+Dependecias:
+
+curl
+gawk
+ttytter -- in the repository
+
+En debian y ubuntu instala con esto:
+sudo apt-get install curl
+sudo apt-get gawk
+
+Nota: No es necesario dejar ttytter corriendo.
+
+----------------------
+git commit -m "$(lynx -dump -nolist http://whatthecommit.com/|sed -n 1p)"
+
+
