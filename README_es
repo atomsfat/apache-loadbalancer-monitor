@@ -9,17 +9,18 @@ Instruciones:
 1. Modifica monitoring/report_status.sh de acuerdo a tus necesiades. Los principales cambios son
    la pagina que se va a monitorear, los usuarios que van a ser notificados, y el status code 
    que vas a estar verificando por default es 200.  
-2. Ejecuta ttytter/1.1.11.txt o la version actual. Asegurate que funciona correctamente, manda 
-   mensajes, menciones y mensajes directos, recuerda para poder mandar mensajes directos los 
-   usuarios deben de ser followers.
-3. Cuando ttytter estes completamente seguro que ttytter esta funcionando correctamente. Ya puedes usar monitoring/report_status.sh.
+2. Antes de poder ejecutar el script principal es necesario configurar ttytter, abre una terminal y ejecuta
+   ttytter/1.1.11.txt o la version mas actual, sigue las instrucciones en pantalla para que se autentifique con twitter. 
+   Una vez que se ha autentificado asegurate que puedes enviar mensajes y mensajes directos, recuerda para 
+   poder mandar mensajes directos los usuarios deben de ser followers.
+3. Cuando estes completamente seguro que ttytter esta funcionando correctamente. Ya puedes empezar a usar monitoring/report_status.sh.
 4. Puedes automatizar el proceso si lo pones en un cron, en debian y ubuntu ejecuta esta comando: crontab -e. 
 
 Dependecias:
 
 curl
 gawk
-ttytter -- in the repository
+ttytter -- en el repositorio.
 
 En debian y ubuntu instala con esto:
 sudo apt-get install curl
