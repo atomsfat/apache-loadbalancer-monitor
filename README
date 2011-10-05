@@ -26,5 +26,6 @@ sudo apt-get gawk
 
 ----------------------
 git commit -m "$(lynx -dump -nolist http://whatthecommit.com/|sed -n 1p)"
+git commit -m "$(curl -s whatthecommit.com/index.txt)"
 
 
